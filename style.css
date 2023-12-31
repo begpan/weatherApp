@@ -14,13 +14,16 @@
     color: #fff;
     padding: 32px;
     width: 40%;
-    margin: 64px auto;
+    height: 70%;
+    margin: auto;
+    margin-top: 20px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center ;
-text-align: center;
+    justify-content: center;
+
+
 }
 
 .weather-header{
