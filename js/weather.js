@@ -16,6 +16,7 @@ import { updateUI } from "./ui.js"
     searchInput: document.querySelector(".weather-searchform"),
     unitsCelsius: document.querySelector(".weather-units-celsius"),
     unitsFarenheit: document.querySelector(".weather-units-farenheit"),
+    maxTemp: document.querySelector(".maxTemp")
 }
 
 let currCity= "Amsterdam"
@@ -58,3 +59,23 @@ selectors.searchForm.addEventListener("submit", async (e)=>{
     await getWeather()
     selectors.searchInput.value = ""
 })
+
+
+selectors.unitsCelsius.addEventListener("click",()=>{
+  if(units !== "metric"){
+    units= "metric";
+    getWeather()
+  }
+});
+
+selectors.unitsFarenheit.addEventListener("click", () =>{
+  if(units !== "imperial"){
+    units="imperial";
+    getWeather()
+  }
+})
+
+
+// document.body.addEventListener("load", async () =>{
+//   await getWeather()
+// })
