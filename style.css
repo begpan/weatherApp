@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container{
+    background: #181818c5;
+    color: #fff;
+    padding: 32px;
+    width: 40%;
+    margin: 64px auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center ;
+text-align: center;
+}
+
+.weather-header{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+}
+
+input{
+    border: none;
+    background-color: #1e1e1e;
+    outline: none;
+    color: #fff;
+    padding: 8px 40px;
+    border-radius: 5px;
+}
+
+input::placeholder{
+    color: #fff;
+
+}
+
+.weather-search{
+    position: relative;
+}
+
+.weather-search i{
+    position: absolute;
+    left: 10px;
+    top: 8px;
+}
+
+.weather-units{
+    font-size: 24px;
+}
+
+.weather-units span{
+    cursor: pointer;
+}
+
+.weather-units span:first-child{
+    margin-right: 8px;
+}
+
+.weather-body{
+    text-align: center;
+    margin-top: 48px;
+}
+
+.weather-datetime{
+    margin-bottom: 32px;
+    font-size: 14px;
+}
+
+.weather-forecast{
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 30px;
+}
+
+.weather-minmax{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-minmax p{
+    display: flex;
+    justify-content: center;
+}
+
+.weather-info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    margin-top: 48px;
+}
+
+.weather-card{
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.weather-card i{
+    font-size: 24px;
+    margin-right: 16px;
+}
+
+.weather-card p{
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+@media (max-width:940px) {
+    .container{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        border-radius: 0;
+    }
+    .weather-header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .weather-units{
+        margin-top: 16px;
+    }
+    
+}
